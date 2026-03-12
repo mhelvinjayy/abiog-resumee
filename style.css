@@ -407,6 +407,9 @@ a {
     transform: translateY(-120%);
     transition: transform 0.25s ease;
     border-top: 1px solid var(--border);
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    z-index: 50;
   }
 
   .nav.open {
@@ -415,11 +418,23 @@ a {
 
   .nav-toggle {
     display: flex;
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: rgba(76, 212, 255, 0.12);
+    transition: background 0.2s ease;
+  }
+
+  .nav-toggle:hover {
+    background: rgba(76, 212, 255, 0.2);
   }
 
   .nav-link {
     padding: 0.9rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    font-size: 1.02rem;
   }
 
   .nav-link:last-child {
