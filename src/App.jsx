@@ -3,6 +3,7 @@ import { SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs, SiPython, SiGit, Si
 import { DiPhotoshop, DiIllustrator } from 'react-icons/di';
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
+import resumeImage from './assets/resume.jpeg';
 
 const navItems = [
   { href: '#hero', label: 'Home' },
@@ -219,7 +220,7 @@ function App() {
             </div>
             <div className="hero-visual reveal">
               <div className="photo">
-                <img src="/resume.jpeg" alt="Mhelvin Jay Abiog" loading="lazy" />
+                <img src={resumeImage} alt="Mhelvin Jay Abiog" loading="lazy" />
               </div>
             </div>
           </div>
